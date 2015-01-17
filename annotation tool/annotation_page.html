@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="<%=basePath%>" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>电子健康信息开放平台</title>
+<link rel="stylesheet" href="style-base.css" type="text/css"
+	media="all" />
+
+</head>
+<body>
+	<!-- Header -->
+	<div id="header">
+		<div class="shell">
+			<!-- Logo + Top Nav -->
+			<div id="top">
+				<h1>
+					<a href="#">个人健康数据开放平台</a>
+				</h1>
+				<div id="top-navigation">
+					欢迎 <a href="#"><strong>张三</strong> </a> <span>|</span> <a href="#">帮助</a>
+					<span>|</span> <a href="#">个人设置</a> <span>|</span> <a href="#">注销</a>
+				</div>
+			</div>
+			<!-- End Logo + Top Nav -->
+			<!-- Main Nav -->
+			<div id="navigation">
+				<ul>
+					<li><a href="javascript:void(0);"
+						onclick="active_tab(this,'idvl/openehr-index');"><span>OpenEHR数据</span>
+					</a>
+					</li>
+					<li><a href="javascript:void(0);"
+						onclick="active_tab(this,'idvl/original-index');"><span>原始数据</span>
+					</a>
+					</li>
+					<li><a href="authorize.html"><span>模拟第三方请求数据</span> </a>
+					</li>
+				</ul>
+			</div>
+			<!-- End Main Nav -->
+		</div>
+	</div>
+	<!-- End Header -->
+
+	<!-- Container -->
+	<!-- Container -->
+<div id="container">
+	<div class="shell">
+		<!-- Small Nav -->
+		<div class="small-nav">
+			<a href="#">文本处理工具</a> <span>&gt;</span> 病症信息标注
+		</div>
+		<!-- End Small Nav -->
+		<br />
+		<!-- Main -->
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			<!-- Content history-->
+			<div id="content">
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2 class="left">病例数据集</h2>
+						<div class="right">
+							<label>搜索</label> <input type="text" class="field small-field" />
+							<input type="submit" class="button" value="search" />
+						</div>
+					</div>
+					<!-- End Box Head -->
+					<!-- Table -->
+					<div class="table">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th width="13"><input type="checkbox" class="checkbox" />
+								</th>
+								<th>序号</th>
+								<th>病例数据</th>
+								<th>状态</th>
+								<th class="ac">操作</th>
+							</tr>
+
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td>1</td>
+									<td> <a
+										href=""
+										class="ico file">2009005216</a> </td>
+									<td><font style="color:green">已标注</font></td>
+									<td> 
+										<a
+										href=""
+										class="ico edit">进行标注</a>
+										<a href="" class="ico del">删除</a>
+									</td>
+
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td>2</td>
+									<td> <a
+										href=""
+										class="ico file">2010031123</a> </td>
+									<td><font style="color:red">未标注</font></td>
+									<td> 
+										<a
+										href=""
+										class="ico edit">进行标注</a>
+										<a href="" class="ico del">删除</a>
+									</td>
+
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td>3</td>
+									<td> <a
+										href=""
+										class="ico file">2010031378</a> </td>
+									<td><font style="color:red">未标注</font></td>
+									<td> 
+										<a
+										href=""
+										class="ico edit">进行标注</a>
+										<a href="" class="ico del">删除</a>
+									</td>
+
+								</tr>
+		
+						</table>
+						<!-- Pagging -->
+						<div class="pagging">
+							<div class="left">1-3/1000</div>
+							<div class="right">
+								<a href="#">上一页</a> <a href="#">1</a> <a href="#">2</a> <a
+									href="#">3</a> <a href="#">4</a> <a href="#">5</a> <span>...</span>
+								<a href="#">下一页</a> <a href="#">查看全部</a>
+							</div>
+						</div>
+						<!-- End Pagging -->
+					</div>
+					<!-- Table -->
+				</div>
+				<!-- End Box -->
+				<div id="openehr-template-view-placeholder">
+					<div class="box">
+						<!-- Box Head -->
+						<div class="box-head">
+							<h2>病例-2010031123 (打开)</h2>
+						</div>
+						<!-- End Box Head -->
+						<form action="" method="post">
+							<!-- Form -->
+							<div class="form">
+								<p>
+ <label>标注文本 <span></span>
+									</label>
+									<div class="field-size1">    
+										患者于2010年10月份在家出现<bw>胸</bw><zz>闷</zz>气喘症状，时而伴随轻微<bw>胸</bw><zz>痛</zz>，最近时常<zz>咳嗽</zz>。
+										于2010年10月31日来我院就诊，经检查：体温36.8 ℃，脉搏75 次/分，呼吸18 次/分，血压155/68mmHg。
+										<br/>...<br/>
+										体表检查：全身<bw>皮肤粘膜</bw><zz>无淤斑</zz>，全身<bw>浅表淋巴结</bw><zz>未触及肿大</zz>，<bw>甲状腺</bw><zz>未触及肿大</zz>，<bw>颈静脉</bw><zz>怒张</zz>...
+
+										<br/>...<br/>
+										心肺部检查：<bw>肺部</bw><zz>听诊无殊</zz>，<bw>心界</bw>向左下<zz>扩大</zz>，<bw>心律</bw><zz>不齐</zz>，<bw>心音</bw><zz>低</zz>，<bw>肺动脉瓣区</bw>可闻及<zz>杂音</zz>...
+										<br/>...<br/>
+										腹部检查：全腹平软，无压痛，未触及包块...
+								</p>
+							</div>
+							<!-- End Form -->
+							<!-- Form Buttons -->
+							<div class="buttons">
+								<input type="submit" class="button" value="提交">
+							</div>
+							<!-- End Form Buttons -->
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- End Content -->
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2>模版选择</h2>
+					</div>
+					<!-- End Box Head-->
+					<div class="box-content">
+						<!-- Sort -->
+						<div class="sort" align="center">
+							<p>
+								<input type="checkbox"><font style="color:blue">  病症对象</font></input>
+							</p>
+							<p>
+								<input type="checkbox"><font style="color:red">  症状描述</input>
+							</p>
+							<br/>
+						</div>
+						<!-- End Sort -->
+					</div>
+				</div>
+				<!-- End Box -->
+			</div>
+			<!-- End Sidebar -->
+			
+			<!-- End Sidebar -->
+			<div class="cl">&nbsp;</div>
+		</div>
+		<!-- Main -->
+	</div>
+</div>
+<!-- End Container -->
+	<!-- End Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="shell">
+			<span class="right">&copy; 2014 - lab122 ZJU</span>
+		</div>
+	</div>
+	<!-- End Footer -->
+</body>
+</html>
+
+
