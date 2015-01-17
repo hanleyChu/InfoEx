@@ -1,4 +1,3 @@
-load('a-f.mat');
 figure
 plot(a, f,'b-o');
 axis([0 2 0 1]);
